@@ -11,8 +11,8 @@ namespace Catalog.Infrastructure.Data {
                 var brandsData = File.ReadAllText(path);
                 var brands = JsonSerializer.Deserialize<List<ProductBrand>>(brandsData);
                 if (brands != null) {
-                    foreach (var item in brands) {
-                        brandCollection.InsertOneAsync(item);
+                    foreach (ProductBrand brand in brands) {
+                        brandCollection.InsertOneAsync(brand);
                     }
                 }
             }

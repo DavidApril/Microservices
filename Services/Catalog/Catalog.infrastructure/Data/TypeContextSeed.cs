@@ -9,9 +9,9 @@ namespace Catalog.Infrastructure.Data {
             string path = Path.Combine("Data", "SeedData", "types.json");
             if (!checkTypes) {
                 var typesData = File.ReadAllText(path);
-                var types = JsonSerializer.Deserialize<List<ProductBrand>>(typesData);
+                var types = JsonSerializer.Deserialize<List<ProductType>>(typesData);
                 if (types != null) {
-                    foreach (var type in types) {
+                    foreach (ProductType type in types) {
                         TypeCollection.InsertOneAsync(type);
                     }
                 }

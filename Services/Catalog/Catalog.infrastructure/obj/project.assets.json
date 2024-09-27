@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Catalog.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Catalog.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Catalog.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.Application.dll": {}
+        }
+      },
+      "Catalog.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Catalog.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Catalog.Application/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.Application/Catalog.Application.csproj",
+      "msbuildProject": "../Catalog.Application/Catalog.Application.csproj"
+    },
+    "Catalog.Core/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.Core/Catalog.Core.csproj",
+      "msbuildProject": "../Catalog.Core/Catalog.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Catalog.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\david\\.nuget\\packages\\": {},
@@ -14,9 +51,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\david\\source\\repos\\Ecommerce\\Services\\Catalog\\Catalog.infrastructure\\Catalog.infrastructure.csproj",
-      "projectName": "Catalog.infrastructure",
-      "projectPath": "C:\\Users\\david\\source\\repos\\Ecommerce\\Services\\Catalog\\Catalog.infrastructure\\Catalog.infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\david\\source\\repos\\Ecommerce\\Services\\Catalog\\Catalog.infrastructure\\Catalog.Infrastructure.csproj",
+      "projectName": "Catalog.Infrastructure",
+      "projectPath": "C:\\Users\\david\\source\\repos\\Ecommerce\\Services\\Catalog\\Catalog.infrastructure\\Catalog.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\david\\source\\repos\\Ecommerce\\Services\\Catalog\\Catalog.infrastructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -39,7 +76,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\david\\source\\repos\\Ecommerce\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
+              "projectPath": "C:\\Users\\david\\source\\repos\\Ecommerce\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

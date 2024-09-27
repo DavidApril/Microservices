@@ -30,3 +30,10 @@ C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\obj\Debug\net
 C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\obj\Debug\net8.0\Catalog.API.pdb
 C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\obj\Debug\net8.0\Catalog.API.genruntimeconfig.cache
 C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\obj\Debug\net8.0\ref\Catalog.API.dll
+C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\bin\Debug\net8.0\Catalog.Application.dll
+C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\bin\Debug\net8.0\Catalog.Core.dll
+C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\bin\Debug\net8.0\Catalog.Infrastructure.dll
+C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\bin\Debug\net8.0\Catalog.Application.pdb
+C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\bin\Debug\net8.0\Catalog.Infrastructure.pdb
+C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\bin\Debug\net8.0\Catalog.Core.pdb
+C:\Users\david\source\repos\Ecommerce\Services\Catalog\Catalog.API\obj\Debug\net8.0\Catalog.API.sourcelink.json
